@@ -39,7 +39,7 @@ export class InicioComponent implements OnInit {
     private postagemService: PostagemService,
     private temaService: TemaService,
     private authService: AuthService,
-    private alertas:AlertasService
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -61,18 +61,18 @@ export class InicioComponent implements OnInit {
     this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema) => {
       this.tema = resp
     })
-      
-      
+
+
   }
 
-  getAllPostagens(){
-    this.postagemService.getAllPostagens().subscribe((resp: Postagem[])=>{
+  getAllPostagens() {
+    this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) => {
       this.listaPostagens = resp
     })
   }
 
-  findByIdUsuario(){
-    this.authService.getByIdUser(this.idUser).subscribe((resp: User)=>{
+  findByIdUsuario() {
+    this.authService.getByIdUser(this.idUser).subscribe((resp: User) => {
       this.user = resp
     })
   }
@@ -83,7 +83,7 @@ export class InicioComponent implements OnInit {
     this.user.id = this.idUser
     this.postagem.usuario = this.user
     this.postagem.foto = this.foto
-    this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) =>{
+    this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
       this.alertas.showAlertSuccess('Postagem realizada com sucesso!')
       this.postagem = new Postagem()
@@ -92,28 +92,28 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  findByTituloPostagem(){
+  findByTituloPostagem() {
 
 
-    if(this.tituloPost == ''){
+    if (this.tituloPost == '') {
       this.getAllPostagens()
-    }else{
-      this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[])=>{
+    } else {
+      this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[]) => {
         this.listaPostagens = resp
       })
     }
 
-    
+
   }
 
-  findByNomePostagem(){
-  if(this.nomeTema == ''){
-    this.getAllTemas()
-  }else{
-    this.temaService.getByNomeTema(this.nomeTema).subscribe((resp: Tema[]) => {
-      this.listaTemas = resp
-    })
+  findByNomePostagem() {
+    if (this.nomeTema == '') {
+      this.getAllTemas()
+    } else {
+      this.temaService.getByNomeTema(this.nomeTema).subscribe((resp: Tema[]) => {
+        this.listaTemas = resp
+      })
+    }
   }
-}
 
 }
