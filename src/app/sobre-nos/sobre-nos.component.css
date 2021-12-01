@@ -1,0 +1,41 @@
+.bg-vverde  {
+    background-color: #49B577;
+}
+
+.bg-vvdark {
+    background-color: #49AB94;
+}
+
+.sobre-text-color{
+    color: #ebe8de;
+    line-height: 1.8rem;
+}
+
+.svgbg {
+    background-image: url(//src/app/sobre-nos/img/Fundo-MAH.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.maxwidth {
+    max-width: 180px;
+}
+  
+.icoGithub{
+    color: #1c282e;
+}
+
+.faLinkedin{
+    color: #0072b1;
+}
+
+.faLinkedin:hover{
+color: #0072b1;
+}
+
+.faGithub:hover{
+color: #49B577;
+}
+#sobre {
+    text-indent: 4em;
+}

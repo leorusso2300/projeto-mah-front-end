@@ -1,0 +1,38 @@
+<app-menu2></app-menu2>
+<div class="container-fluid pb-0">
+    <div class="row h-auto">
+        <div class="col-md-6 pl-0 slideImg">
+          <img src="../../assets/img/MAH CADASTRAR 2.png" class="img-fluid">
+        </div>
+
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center p-5">
+
+            <div class="form-group m-2 w-100 mx-5">
+                <h1 class="mb-3 text-success">Login</h1>
+                
+                <label for="exampleInputEmail1">Endereço de email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Seu email" [(ngModel)]='userLogin.usuario'>
+                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
+                    ninguém.</small>
+            </div>
+            <div class="form-group m-2 w-100 mx-5">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha"
+                    [(ngModel)]='userLogin.senha'>
+                
+                <input type="checkbox" aria-label="Checkbox for following text input"><small> Lembre de mim</small>
+            </div>
+            
+
+           
+            <div class=" mx-5 m-2 w-100">
+                <button type="submit" class="btn btn-outline-success" (click)='entrar()'>Entrar</button>
+            </div>
+
+            
+
+        </div>
+    </div>
+</div>
+<app-rodape></app-rodape>

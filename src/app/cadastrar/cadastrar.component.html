@@ -1,0 +1,50 @@
+<app-menu2></app-menu2>
+<div class="container-fluid">
+
+    <div class="row h-auto">
+      <div class="col-md-6 pl-0 slideImg">
+        <img src="../../assets/img/MAH CADASTRAR 2.png" class="img-fluid img">
+      </div>
+      <div class="col-md-6 p-5 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="m-3 w-100 text-success">Cadastrar</h1>
+        <div class="w-100">
+          <div>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o seu nome aqui"
+                [(ngModel)]='user.nome'>
+            </div>
+  
+            <div class="form-group">
+              <label for="usuario">Nome de usuário</label>
+              <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Digite um email"
+                [(ngModel)]='user.usuario'>
+            </div>
+  
+            <div class="form-group">
+              <label for="foto">Link da foto</label>
+              <input [(ngModel)]='user.foto' class="form-control" type="text" name="foto" id="foto"
+                  placeholder="Escolha um link para foto">
+          </div>
+  
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha"
+                placeholder="Escolha uma senha">
+        </div>
+  
+        <div class="form-group">
+            <label for="confirmSenha">Confirmar senha</label>
+            <input [(ngModel)]='user.senha' class="form-control" type="password" name="confirmSenha" id="confirmSenha"
+                placeholder="Confirme a senha que você escolheu">
+        </div>
+            <button class="btn btn-outline-success" (click)='cadastrar()'>Cadastrar</button>
+  
+  
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <app-rodape></app-rodape>

@@ -1,0 +1,183 @@
+
+/* Ellipse 5 */
+
+
+
+
+
+
+
+/* Ellipse 5 */
+.layout{
+  position: absolute;
+  width: 363.53px;
+  height: 363.53px;
+  left: 1171.47px;
+  top: 713.54px;
+  
+  background: #49AB94;
+  transform: rotate(-90deg);
+  }
+  
+  /* Ellipse 6 */
+  
+  .layout{
+  position: absolute;
+  width: 363.53px;
+  height: 363.53px;
+  left: 626.18px;
+  top: 528.29px;
+  
+  background: #49AB94;
+  transform: rotate(-90deg);
+  }
+  
+  /* Ellipse 7 */
+  
+  .layout{
+  position: absolute;
+  width: 363.53px;
+  height: 363.53px;
+  left: 626.18px;
+  top: 895.78px;
+  
+  background: #49AB94;
+  transform: rotate(-90deg);
+  }
+  
+  /* Ellipse 8 */
+  
+  .layout{
+  
+  position: absolute;
+  width: 363.53px;
+  height: 363.53px;
+  left: 989.71px;
+  top: -17px;
+  
+  background: #89F235;
+  transform: rotate(90deg);
+  
+  }
+  
+  /* Ellipse 9 */
+  
+  .layout{
+  position: absolute;
+  width: 363.53px;
+  height: 363.53px;
+  left: 1535px;
+  top: 348.27px;
+  
+  background: #89F235;
+  transform: rotate(-180deg);
+  }
+  
+  /* Ellipse 10 */
+  
+  .layout{
+  position: absolute;
+  width: 363.53px;
+  height: 363.53px;
+  left: 1535px;
+  top: 713.54px;
+  
+  background: #89F235;
+  transform: rotate(-180deg);
+  }
+  
+  /* Ellipse 19 */
+  
+  .layout{
+  position: absolute;
+  width: 344px;
+  height: 339px;
+  left: 35px;
+  top: 51px;
+  
+  background: #89F235;
+  }
+
+
+
+  /*/ CSS Menu De Biblioteca*/
+
+  
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+}
+
+.menu {
+  font-weight: 100;
+  background: #12a050;
+  width: 180px;
+  height: 100%;
+  padding-left:70px;
+  position: fixed;
+  z-index: 100;
+  -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  left: -130px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  color: #222;
+}
+.menu:hover, .menu:focus {
+  transform: translate3d(130px, 0, 0);
+  animation-timing-function: 1s ease-in;
+}
+.menu .title {
+  top: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transform: rotate(270deg);
+  right: -10px;
+  font-weight: 800;
+  font-size: 15px;
+}
+.menu .nav {
+  
+  position: relative;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 150;
+}
+.menu .nav li {
+ 
+  padding-bottom: 50px;
+  list-style-type: none;
+}
+.menu .nav li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.menu .nav li a:hover {
+  color: #aaa;
+}
+
+/* CSS Card Postagem */
+  
+.card {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+.card:hover {
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+  -moz-transform: scale(1.15); /* Firefox */
+  -ms-transform: scale(1.15); /* IE 9 */
+  -o-transform: scale(1.15); /* Opera */
+  transform: scale(1.15);
+}
