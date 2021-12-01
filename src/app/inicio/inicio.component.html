@@ -133,7 +133,7 @@
         <div class="card-columns" *ngFor='let tema of listaTemas'>
           <div class="card text-center" *ngFor='let item of tema.postagem | orderBy : key : reverse'>
             <div class="card-body">
-              <h5 class="card-title m-0">{{item.titulo}}</h5>
+              <h5 class="card-title m-0">{{tema.descricao}}</h5>
               <p class="card-text mt-3">{{item.texto}}</p>
               <a href="{{item.link}}" class="card-link">{{item.link}}</a>
               <p class="card-text"><small class="text-muted">{{item.data | date: "dd/MM/yyyy"}} às {{item.data
